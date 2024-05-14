@@ -35,7 +35,7 @@ public:
 
 class Archer : private Monster
 {
-private:
+public:
 	void Func() override
 	{
 		m_HP; //public
@@ -46,7 +46,7 @@ private:
 
 class Wizard : protected Monster
 {
-protected:
+public:
 	void Func() override
 	{
 		m_HP; //public
