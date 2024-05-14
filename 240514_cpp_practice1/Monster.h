@@ -25,7 +25,7 @@ public:
 class Fighter : public Monster
 {
 public:
-	void Func() override
+	void Func() override //virtual & override
 	{
 		m_HP; //public
 		m_MP; //private 클래스 밖 사용 x
@@ -45,17 +45,6 @@ private:
 };
 
 class Wizard : protected Monster
-{
-protected:
-	void Func() override
-	{
-		m_HP; //public
-		m_MP; //private 클래스 밖 사용 x
-		m_DEF; //protected 상속 ok
-	}
-};
-
-class Witch : public Wizard
 {
 protected:
 	void Func() override
